@@ -1,0 +1,11 @@
+<?php echo "<h1>Selamat Datang, " . $_SESSION['Username'] ."!". "</h1>"; ?>
+            <h3>Data diri anda meliputi:</h3>
+            <?php foreach ( $cruds as $crud ){ ?>
+            <ul>
+                <li>Nama: <?= $crud["nama"] ?></li>
+                <li>nis: <?= $crud["nis"] ?></li>
+                <li>rombel: <?= $crud["rombel"] ?></li>
+                <li>rayon: <?= $crud["rayon"] ?></li>
+                <li>Janis kelamin: <?= $crud["jk"] ?></li>
+            </ul>
+            <?php } ?>
